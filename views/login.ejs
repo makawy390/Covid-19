@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" href="../stylesheets/SignIn.css">
+</head>
+<div class="center enhance" >
+  
+  <h2>
+    <img class="avatar" src="/images/login-avatar2.png" alt="" srcset="">
+    <p>Sign In</p>
+    
+  </h2>
+ 
+  <form action="/user/login" method="post">
+      <div class="txt-feild">
+          <input type="text" name="email" required>
+          <span></span>
+          <label>Email</label>
+      </div>
+      <div class="txt-feild">
+          <input type="password" name="password"  required>
+          <span></span>
+          <label>Password</label>
+      </div>
+      <input type="submit" value="Sign In" class="submit">
+      <div class="pass">Forgot Password?</div>
+      <div class="signup-link">
+          Create new account? <a href="/user/signup">Sign Up</a>
+      </div>
+  </form>
+  <% if (success == false) { %>
+    <div class="error">
+      <% if (error.errors.length !== 0) { %>
+       <% if(error.errors[0].param === "password") {%>
+        <p> Password is not correct </p>
+      <%}else if(error.errors[0].param === "email") {%>
+        <p>email doesn't registered, create account</p>
+      <%}%>
+        <% } %>
+    </div>
+  <% } %>
+</div>

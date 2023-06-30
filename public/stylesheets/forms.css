@@ -1,0 +1,432 @@
+*{
+  box-sizing: border-box;
+}
+/* html {
+  scrollbar-color: darkblue white;
+  overflow-x:hidden;
+} */
+body {
+  position: relative;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:100%;
+  height:100%;
+  /*font-size:arial;*/
+  padding:0px;
+  /* height:2000px; */
+}
+::-webkit-scrollbar {
+  width:15px;
+}
+::-webkit-scrollbar-track {
+  border:1px solid #3f51b5;
+  border-radius:5px;
+  box-shadow: inset 0 0 1px 1px #3f51b5;
+}
+::-webkit-scrollbar-thumb{
+  background:#3f51b5;
+  border-radius:50px;
+  /* border-radius:5px; */
+  /* font-color:black; */
+}
+.current {
+  display: block !important;
+}.container {
+  position:relative;
+  width:100%;
+  /* height:100%; */
+}
+/* +1 Expert Window */
+/* #expert_window {
+  position: absolute !important;
+  left: 300px;
+  border:none;
+  width: 70%;
+  height: 100%;
+  top:0; 
+  
+   background: red;
+} */
+/* +2 Expert App */
+.exp-app {
+  width:60%;
+  min-height:550px;
+  border:none;
+  /* background:lightgrey; */
+  margin:10% auto;
+}.exp-app > aside, #expert-door {
+  position: absolute;
+  border:none;
+  display:none;
+  top:0;
+  left:0;
+}
+/* )+ Diagnose Service Start Door or window */
+#expert-door > div {
+  height:100%;
+}#expert-door .left-side {
+  background:grey;
+}#expert-door header h1 {
+  font-size:1.6em;
+  color: gray;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+/* }#expert-door footer {
+
+} */
+#expert-door footer button {
+  width: 182px !important;
+  font-size: 1em !important;
+  height: 36px !important;
+  margin: 5px 5px;
+}#expert-door footer button.complete {
+   background: white !important;
+   color: grey !important;
+   border-color: white;
+}
+/* #expert-door .diagnose-cnt {
+
+} */
+#expert-door .diagnose-cnt img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}#expert-door .diagnose-cnt .diagnose-desc {
+  font-size: 1.2em;
+  text-align: left;
+  text-align: justify;
+  color: gray;
+  text-indent: 52px;
+  margin-bottom: 14px;
+}
+#expert_window .left-side {
+  position: relative;
+  background-color: grey;
+}
+#expert_window .left-side img {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  top: 42%;
+  left: 64%;
+}#expert_window .right-side {
+  padding: 88px 52px;
+  /* padding: 35px 49px; */
+  padding-right:30px !important;
+}#expert_window .right-side .question-cntr {
+  /* padding: 10px 0px; */
+  margin-bottom:15px;
+}#expert_window .right-side .question-cntr .get-answers {
+  margin:12px 0px !important;
+}#expert_window .right-side .question-cntr .question-desc p{
+  position:relative;
+  font-size: .9em;
+  margin: 4px 0px;
+  background: gray;
+  color: white;
+  padding: 3px 10px;
+  opacity: 0.8;
+  border: 1px solid grey;
+  border-radius: 5px;
+}#expert_window .right-side .question-cntr .question-desc p span {
+  font-weight: bold;
+  position: absolute;
+  width: 20px;
+  display: block;
+  background: white;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 5;
+  color: gray;
+  text-align: center;
+  left: -32px;
+}
+
+#expert_window .right-side .question-cntr > p {
+  position: relative;
+  font-size:1.3em;
+  color:grey;
+  font-weight:bold;
+}#expert_window .right-side .question-cntr > p span {
+  width: 17px;
+  height: 17px;
+  border: 2px solid gray;
+  /*background: grey;*/
+  font-size: 3px;
+  padding: 0px 3px;
+  border-radius: 50%;
+  line-height: -1px;
+  margin-right: 5px;
+  top: 6px;
+  position: absolute;
+  left: -24px;
+}#expert_window .right-side button {
+  width: 75px;
+  height: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid gray;
+  color: grey;
+  /*font-weight: bold;*/
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all .3s linear;
+}#expert_window .right-side button:hover {
+  background:grey;
+  color:white;
+}#expert_window .right-side footer div {
+  position: relative;
+  float: right;
+}#expert_window .right-side footer  button {
+  background:grey;
+  color:white;
+  /*width:100%;*/
+  margin:5px 4px;
+}#expert_window .right-side footer button:hover {
+  /* background:transparent;
+  color:grey; */
+  opacity:.6;
+}#expert_window .right-side footer .back-btn {
+  background:white;
+  color: grey;
+  border-color:white;
+}.selected {
+  background:grey !important;
+  color:white !important;
+}
+
+/* )+ Diagnose Service Forms */
+.frm-exp {
+  /* border:1px solid darkblue !important; */
+  background-color: #ffffff59;
+  /* background-color: url('../images/shape/shape-a.png'); */
+  /* height:673px !important; */
+  display: none;
+  padding-bottom: 48px;
+  /* overflow-y: scroll; */
+  /* height: 650px !important; */
+  width: 61%;
+  position: relative;
+  top: -100px;
+  left: -180px;
+}
+#flu , #medicine{
+  height: 673px !important;
+  overflow-y: scroll;
+  width: 57%;
+}
+#medicine .prev , #flu .prev{
+  left: -250px;
+
+}
+#sever{
+  width: 55%;
+  border-radius: 10px;
+width: 48%;
+}
+#sever .prev{
+  left: -180px;
+
+}
+#moderate{
+  width: 55%;
+  width: 55%;
+}
+#moderate .frm-title{
+width: 568px;
+}
+#moderate .prev{
+  left: -250px;
+}
+
+#sever .frm-title{
+  width: 490px;
+}
+/* Address of Question */
+.frm-exp .frm-title {
+  height: 68px;
+  background: #ffffff59;
+  color: #000;
+  font-weight: bold;
+  padding: 17px;
+  /* font-size: 3rem; */
+  padding-left: 35px;
+  box-shadow: 1px 1px 20px #8ccfda;
+  border-radius: 5px;
+  position: relative;
+  width: 550px;
+  top: 2px;
+  left: -29px;
+}
+.frm-exp .frm-title p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+color: #465675;
+font-size: 25px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+/* Container of Question*/
+.frm-exp .frmqstns {
+  color: darkblue;
+  /* padding: -1px 4px; */
+  padding: 10px;
+}
+/* Question of form */
+.frm-exp .frmqstns .frm-qstn {
+  font-size: 21px;
+  /* margin: 14px 0px;
+  border-bottom: 2px solid #cceff5;
+  padding-bottom: 5px;
+  box-shadow: 1px 1px 3px #83cedb;
+  padding: 19px; */
+}
+.frm-exp .frmqstns .frm-qstn p {
+  margin: 5px 0px;
+  /* text-transform: capitalize; */
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #3f51b5;
+  
+}
+/* Select anwers of form */
+.select-answers > section {
+  width: 110px;
+  height: 34px;
+  /* background: #8ccfda; */
+  margin: 5px 0px;
+  text-align: center;
+  /* padding: ; */
+  padding: 4px;
+  border-radius: 6px;
+  display: inline-block;
+  color: #000;
+}
+.frm-exp .frmqstns .frm-qstn .select-answers {
+  font-size: 1.2rem;
+  color: #4797b7;
+}
+.frm-exp .frmqstns .frm-qstn .select-answers input {
+  color:darkblue;
+  border-color: darkblue;
+  background-color:darkblue;
+  margin:0px 3px;
+}
+/* Navigation of form */
+.frm-exp .frm-navigation {
+  height: 35px;
+}
+.frm-exp .frm-navigation div {
+  float:right;
+  padding-right: 20px;
+  margin-top: -16px;
+}
+/* Buttons of form */
+.frm-exp .frm-navigation div button {
+  position: relative;
+  padding: 15px;
+  min-width: 100px;
+  margin: 0px 5px;
+  height: 34px;
+  line-height: 5px;
+  /* margin-left: 50px; */
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  /* color: #eee; */
+  /* box-shadow: 1px 1px 7px #6fbfe1; */
+  /* text-transform: uppercase; */
+  /* border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  transition: all .3s ease-in-out;
+}.frm-exp .frm-navigation div button:hover {
+  background:white;
+  color:darkblue;
+}
+
+.prev:hover , .next:hover{
+  background: #3f51b5 !important;
+    color: #fff !important;
+  
+  }
+.next{
+  border-radius: 5px  !important;
+background:#fff !important;
+    color: #3f51b5 !important;
+    position: relative;
+    left: -55px;
+    top: 20px;
+
+}
+.prev{
+  border-radius: 5px  !important;
+  background:#fff !important;
+      color: #3f51b5 !important;
+      position: relative;
+      /* left: -260px !important; */
+      top: 20px;
+      
+  
+  }
+
+/* On screens that are 415px or less, set these style */
+@media screen and (max-width: 768px) {
+
+  /* body {
+    background:red !important;
+  } */
+
+ .exp-app {
+  width:100%;
+  /* padding:5px; */
+  /* margin:5px; */
+ }
+  /* START WINDOW */
+  #expert-door footer button {
+    width:100% !important;
+  }
+
+  #expert-door .diagnose-cnt img {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  #expert-door header h1 {
+    margin-top:5px !important;
+  }
+  #expert-door .diagnose-cnt .diagnose-desc {
+    font-size: .9em;
+  }#expert_window .right-side .question-cntr > p {
+    font-size:1em;
+  }
+}
+
+/* IPHONEs _ GALAXY _ Small Devices */
+@media screen and (max-width: 529px) {
+  .exp-app {
+    min-height: 691px;
+  }
+  #expert_window .right-side footer div, #expert_window .right-side footer div button {
+    width: 100% !important;
+  }
+}
+
+/* CRAZY GALAXY */
+@media screen and (max-width: 360px) {
+  /* )+ Start Window of diagnose */
+  #expert-door header h1 {
+    font-size:1em;
+  }
+
+
+}
+
+

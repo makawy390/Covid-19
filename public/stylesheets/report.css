@@ -1,0 +1,189 @@
+
+:root {
+    --main-color-h: #2980b9;
+    --main-color-report : #1976d2;
+    --main-color : #f0430e;
+    --main-color-btn: linear-gradient(120deg,#2980b9 , #8e44ad);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family:'Segoe UI', sans-serif;
+    /* height: 600px ; */
+}
+
+ 
+.report .back-ground{
+    position: absolute;
+    width: 100%;
+    height: 762px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.report .content-report{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.current {
+    display: block !important;
+}
+
+
+
+.several-case ,.report-one ,
+ .critical , .report-two ,
+  .mild-case , .report-three ,
+  .moderate-case , .stable-suspected ,
+  .allergies , .cold
+  {
+    background: rgb(234, 248, 252);
+    margin-top:100px;
+    margin-bottom: 60px;
+    /* height: 570px; */
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 29%;
+    z-index: 2;
+    width: 50%;
+    height: 800px;
+    margin-bottom: 100px;
+    display: none;
+    
+
+
+   
+    
+}
+
+.report-one {
+    height: 400px;
+    width: 700px;
+}
+.report-two{
+    height: 450px;
+    width: 700px;
+}
+.report-one .btn-next{
+    left: 320px;
+}
+.report-two .btn-next{
+    left: 350px;
+} 
+.critical {
+    height: 250px;
+}
+.critical .btn-next{
+    left: 450px;
+}
+ .mild-case , .report-three {
+     height: 450px;
+ }
+ .report-three .btn-next {
+    left: 430px;
+}
+
+.several-case h2 , .report-one h2 , .critical h2 , .report-two h2 , .mild-case h2 , .report-three h2 ,
+.moderate-case h2 , .stable-suspected h2 , .allergies h2 , .cold h2
+{
+    padding-left: 40px;
+    padding-top: 0px;
+    color: #fcfcfc;
+    border-bottom: 1px solid #55b6cd;
+    line-height: 3;
+    background: linear-gradient( aliceblue, #55b6cd);
+    box-shadow: 0px 11px 12px #acdbe9;
+    text-transform: capitalize;
+}
+
+
+    
+.several-case h3 , .mild-case h3 ,
+.moderate-case h3 , .stable-suspected h3
+{
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-left: 40px;
+    color: var(--main-color) ;
+
+}
+.several-case .list-style , .report-one .list-style , 
+.critical .list-style , .report-two .list-style ,
+ .mild-case .list-style,.report-three .list-style , 
+ .moderate-case .list-style , .stable-suspected .list-style ,
+ .allergies .list-style , .cold .list-style
+ 
+  {
+list-style:none ;
+padding-top: 7px;
+padding-left: 40px;
+line-height: 2;
+font-size: 18px;
+text-align: justify;
+
+
+color: var(--main-color-report);
+width: 80%;
+}
+.several-case .list-style li span , .stable-suspected span ,
+.allergies .list-style li span , .cold .list-style li span
+{
+    color: var(--main-color);
+    font-weight: 700;
+
+}
+
+.several-case  button , .report-one button ,
+ .critical button , .report-two button ,
+ .mild-case button , .report-three button ,
+ .moderate-case button , .stable-suspected button ,
+ .allergies button , .cold button
+ 
+ {
+    /* background: var(--main-color-btn); */
+    padding: 10px;
+    width: 100px;
+    margin-left:20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #eee;
+    border-radius: 6px;
+}
+.stable-suspected {
+height: 400px;}
+.several-case {
+    width: 80%;
+    height: 540px;
+    left: 0;
+    top: -40px;
+    margin-top: 0px;
+    /* padding-bottom: 50px; */
+}
+.several-case .btn-next{
+    left: 410px;
+}
+.several-case .btn-prev{
+    margin-left: 30px;
+}
+
+.allergies {
+height: 250px;}
+.cold{
+height: 250px;}
+
+.current button:hover {
+    background: transparent;
+    color: #6fbfe1;
+    /* border: 1px solid #6fbfe1; */
+}

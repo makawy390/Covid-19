@@ -1,0 +1,20 @@
+<form action="/admin/database/manage" method="post">
+  <p style="padding:5px 0px;">
+    Select the name of hospital
+  </p>
+  <select name="hospital_name" id="">
+    <%for( let y = 0; y < hospitalsNames.length; y++ ) {%>
+      <option value = "<%= hospitalsNames[y].H_name %>" >
+        <%=hospitalsNames[y].H_name%>
+      </option>
+    <%}%> 
+  </select>  
+  <br>
+  <input type="text" name="numbeds" id="" placeholder=" number of beds ">
+  <br>
+  <input type="text" name="numintesivecasebeds" id="" placeholder=" number of intensive case beds ">
+  <br>
+  <button type="submit">
+    Update
+  </button>
+</form

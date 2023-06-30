@@ -1,0 +1,250 @@
+:root {
+    --main-color-h: #303f9f;
+    --main-color-p :#757575 ;
+    --main-color : rgba(255, 255, 255, 0.212);
+    --main-color-btn: linear-gradient(120deg,#2980b9 , #8e44ad);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Start Daignosis */
+.content{
+    /*width: 1170px;*/
+    z-index: 1001;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.diagnose-start {
+    text-align: center;
+    /* z-index: 1001; */
+
+}
+.dagnosis{
+    background: url('../images/07.jpg');
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-left: 500px;
+    /* margin:38px 0px; */
+    position: relative;
+}
+
+.start-daignosis , .diagnosis-one , 
+.diagnosis-two , .diagnosis-three ,
+.diagnosis-four , .diagnosis-five ,
+.diagnosis-six  
+/* .diagnosis-six */
+{
+    display: none;
+
+}
+.dagnosis .start-daignosis,
+.dagnosis .diagnosis-one  ,
+.dagnosis .diagnosis-two  ,
+.dagnosis .diagnosis-three , 
+.dagnosis .diagnosis-four ,
+.dagnosis .diagnosis-five , 
+.dagnosis .diagnosis-six
+{
+    background-color: rgba(241, 241, 241, 0.527);
+    width: 700px;
+  /* background: url('../images/shape/shape-a.png'); */
+    height: 380px;
+    padding: 60px 30px 60px 30px;
+    line-height: 2;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+.dagnosis .start-daignosis:hover,
+.dagnosis .diagnosis-one:hover  ,
+.dagnosis .diagnosis-two:hover  ,
+.dagnosis .diagnosis-three:hover , 
+.dagnosis .diagnosis-four:hover ,
+.dagnosis .diagnosis-five:hover , 
+.dagnosis .diagnosis-six:hover {
+    box-shadow: 1px 1px 10px #e2eaee;
+}
+
+.start-daignosis h2{
+    color: #465675;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+.start-daignosis p{
+    color: rgb(109, 104, 104);
+    letter-spacing: 2px;
+    font-style: italic;
+    /* font-style: ; */
+    font-size: 1.1rem;
+}
+.start-daignosis .btn button , .diagnosis-one .btn button ,
+.diagnosis-two .btn button   , .diagnosis-three .btn button ,
+.diagnosis-four .btn button  , .diagnosis-five .btn button ,
+.dagnosis .diagnosis-six .btn button
+{
+    background: #303f9f;
+    position: relative;
+    padding: 15px;
+    min-width: 120px;
+    margin: 0px 5px;
+    height: 34px;
+    line-height: 5px;
+    /* margin-left: 50px; */
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #eee;
+    box-shadow: 1px 1px 7px #6fbfe1;
+    /* text-transform: uppercase; */
+    /* border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    transition: all .3s ease-in-out;
+}
+.btn-start {
+    border-radius: 5px;
+    background:#fff !important;
+    color: #303f9f !important;
+}.btn-start:hover {
+    background: #303f9f !important;
+    color: #fff !important;
+}
+.btn-complete{
+    border-radius: 5px;
+    background: #303f9f !important;
+    color: white  !important;
+
+}
+.btn-complete:hover {
+    background:#fff !important;
+    color: #303f9f !important;
+    /* opacity: .5 !important;  */
+    /* background: none !important;
+    color: none !important;  */
+}
+.btn-prev {
+    border-radius: 5px;
+    background:#fff !important;
+    color: #303f9f !important;
+}
+.btn-prev:hover , .btn-next:hover{
+    background: #303f9f !important;
+    color: #fff !important;
+}
+.btn-next {
+    border-radius: 5px;
+    background:#fff !important;
+    color: #303f9f !important;
+    position: relative;
+    left: 240px;
+}
+
+/* End Start Daignosis */
+
+/*Start Daignosis One */
+.dagnosis .diagnosis-one {
+    height: 400px;   
+}
+
+.diagnosis-one li {
+font-size: 18px;
+
+}
+.diagnosis-one .radio-btn{
+    position: relative;
+   
+}
+.radio-btn input{
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+
+/*End Daignosis One */
+
+/*Start Daignosis Two */
+.dagnosis .diagnosis-two{
+    height: 500px;
+ 
+}
+.diagnosis-two ul.report li , .diagnosis-three ul.report li ,
+.diagnosis-five ul.report li
+{
+    list-style: none;
+    font-size: 17px;
+    font-style: italic;
+    color: var(--main-color-p);
+}
+
+/*End Daignosis Two */
+
+/*Start Daignosis Three */
+.dagnosis .diagnosis-three 
+
+{
+    height: 450px;
+}
+/*End Daignosis Three */
+
+/*Start Daignosis Four */
+.dagnosis .diagnosis-four{
+    margin-top: 100px;
+    height: 250px;
+    width: 600px;
+}
+.diagnosis-four .btn-next{
+    left: 300px;
+}
+/*End Daignosis Four */
+
+/*Start Daignosis Five */
+.dagnosis .diagnosis-five{
+    
+    height: 600px;
+}
+/*End Daignosis Five */
+
+/*Start Daignosis Six */
+.dagnosis .diagnosis-six {
+    height: 275px;
+    margin-top: 100px;
+}
+.diagnosis-six .btn-next{
+    left: 440px;
+
+}
+/*End Daignosis Six */
+
+.check-case {
+    text-decoration: none;
+    color: #34bdd4;
+    font-size: .9rem;
+    display: inline-block;
+    border: 1px solid white;
+    padding: 0px 12px;
+    /* border-radius: 31px; */
+    background: white;
+    font-weight: bold;
+}
+/* Current */
+
+.current{
+    display: block;
+}

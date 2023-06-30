@@ -1,0 +1,203 @@
+:root {
+    /* -dflt-clr: white; */
+    --lvl-1: #cafffe;
+    --lvl-2: #a9f2f1;
+    --lvl-3:#7fe5e4;
+    --lvl-4:#5ed8d7;
+    --lvl-5:#42ccca;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif; 
+    background: url('/images/Diagnosis/01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Enhance style */
+.enhance {
+    /* border: 1px solid aquamarine; */
+    /* padding: 17px; */
+    background: rgba(255, 255, 255, 0.329) !important;
+    /* box-shadow: 1px 1px 5px var(--lvl-5), -1px -1px 5px var(--lvl-5); */
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    text-align: left;
+    margin: -68px 0px;
+    display: none;
+    top: 34px;
+    left: 173px;
+    border: 2px solid var(--lvl-1);
+    border-radius: 50%;
+}
+
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50% , -50%);
+    width: 400px;
+    background: rgba(255, 255, 255, 0.263);
+    border-radius: 10px;
+}
+.center h2{
+    text-align: left;
+    /* padding: 0 0 20px 0; */
+    /* border-bottom: 2px solid silver; */
+    width: 100%;
+    /* color: #000; */
+    height: 70px;
+    border-bottom: 1px solid #2691d9;
+    /* background: var(--lvl-5); */
+    /* box-shadow: 1px 22px 30px var(--lvl-3); */
+    color:#2691d9;
+    font-size: 23px;
+    padding: 45px 45px;
+    font-weight: bold;
+    /* border-radius: 10px; */
+    text-transform: capitalize;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+form .txt-feild{
+position: relative;
+border-bottom: 3px solid #2691d9;
+margin: 30px 0;
+}
+.txt-feild input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #000;
+
+}
+.txt-feild label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #2691d9;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+
+}
+.txt-feild span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt-feild input:focus ~ label ,.txt-feild input:valid ~ label  {
+    top: -5px;
+    color: #2691d9;
+    font-weight:bold;
+}
+.txt-feild input:focus ~ span ::before
+,.txt-feild input:valid ~ span::before  {
+    width: 100%;
+
+}
+
+.pass{
+    margin: 0px;
+    color: #000;
+    line-height: 2;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px 0px;
+    width: 140px;
+    padding-bottom: 8px;
+    /* text-decoration: underline; */
+
+}
+.pass:hover{
+    text-decoration: underline;
+    color: #2691d9;
+    
+}
+
+.center input[type="submit"]{
+    width: 35%;
+    height: 40px;   
+    /* border: 1px solid var(--lvl-4); */
+    border: none;
+    background: #2691d9;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #e9f4fb;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 6px #2691d9;
+    transition: all .3s linear;
+}
+/* 
+.center input[type="submit"]:hover {
+    background:var(--lvl-1);
+    color:var(--lvl-4);
+} */
+
+/* .center input [type="submit"]:hover{
+  border-color: #2691d9;
+  color: #2691d9;
+  transition: .5s;
+   
+} */
+.signup-link{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    /* padding: 0px 0px;
+    padding-bottom: 40px; */
+    font-weight: bold;
+    /* border: 1px solid var(--lvl-1); */
+    height: 50px;
+    border-radius: 10px;
+    padding: 14px 0px;
+    /* background: var(--lvl-1); */
+    /* box-shadow: 1px 1px 3px var(--lvl-1); */
+}
+.signup-link a{
+    text-decoration: underline;
+    font-weight: normal;
+    color: #2691d9;
+}
+
+.signup-link a:hover{
+    text-decoration: underline;
+
+}
+
+.error {
+    position: absolute;
+    width: 100%;
+    height: 37px;
+    color: #fff;
+    background: rgba(255, 0, 0, 0.3);
+    text-align: center;
+    padding: 6px;
+    bottom: -45px;
+    border-radius: 5px;
+    font-size: 17px;
+}

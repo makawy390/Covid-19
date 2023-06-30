@@ -1,0 +1,57 @@
+
+    
+
+    <!--Start Landing Page-->
+<%- include("./partials/navbar.ejs") %> 
+  <div class="dagnosis">
+     <!-- <aside expPg="isStableCase"> -->
+      <aside class="diagnosis-four current" expPg="isStableCase">
+        <div class="content">
+            <ul>
+                <li>
+                    <p>Is your case not stable means "any symptom appeared" ?</p>
+                    <div class="radio-btn">
+                        <input type="radio"  name="qes" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio"  name="qes" id="no" value="no">
+                        <label for="No">No</label> 
+                </li>
+            </ul>
+            <div class="btn">
+                <!-- <button class="disable">Prev</button> -->
+                <button onclick="expSysGuider({selectedPgName: ''})" class="btn-next">Next</button>
+            </div>
+         </div>
+      </aside>
+      
+       <!-- <aside expPg="stableCase"> -->
+        <div class="content-report">
+          <aside class="report-one " expPg="stableCase">
+              <h2>Report</h2>
+              <ul class="list-style">
+                  <li>You don`t have flu-like symptoms and you have not been exposed to Covid-19.</li>
+                  <li>You are not at significant risk of Covid-19. Take all necessary precautions to monitor your health.</li>
+                  <li>Congratulations you don`t have any type of risk.</li>
+              </ul>
+              <button class="btn-prev" onclick="expSysGuider({selectedPgName: 'isStableCase', mission: 'back'})">Back</button>
+              <a href="/diagnose/end"><button class="btn-next" >Ok</button></a>
+          </aside>
+      </div>
+  <!-- </aside> -->
+  
+     <!-- <aside expPg="examinationsCase"> -->
+      <div class="content-report" >
+        <aside class="report-two" expPg="examinationsCase">
+            <h2>Report</h2>
+            <ul class="list-style">
+                <li>You have symptoms like flu and You have been exposed to Covid-19 means Suspected case</li>
+                <li>You should do PCR examine and or CT scan >After do PCR and CT scan get back to Diagnose Service and click Complete button to continue the dignose.</li>
+            </ul>
+            <button onclick="expSysGuider({selectedPgName: 'isStableCase', mission: 'back'})" class="btn-prev">Back</button>
+            <a href="/diagnose/done/examinationsCase"> <button class="btn-next" > Ok</button></a>
+        </aside>
+    </div>
+<!-- </aside> -->
+</div>
+
+  

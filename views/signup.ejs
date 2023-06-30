@@ -1,0 +1,52 @@
+
+<head>
+  <link rel="stylesheet" href="../stylesheets/SignIn.css">
+</head>
+
+<div class="center enhance">
+  <h2>
+    <img class="avatar" src="/images/login-avatar2.png" alt="" srcset="">
+    <p>Sign Up</p>
+  </h2>
+  <form action="/user/signup" method="post">
+      <div class="txt-feild">
+        <input type="text" name="name" required>
+        <span></span>
+        <label>User Name</label>
+      </div>
+      <div class="txt-feild">
+          <input type="email" name="email" required>
+          <span></span>
+          <label>Email</label>
+      </div>
+      <div class="txt-feild">
+          <input type="password" name="password"   required>
+          <span></span>
+          <label>Password</label>
+      </div>
+      <div class="txt-feild">
+        <input type="password" name="confirm-password"  required>
+        <span></span>
+        <label>Confirm password</label>
+    </div>
+      <input type="submit" value="Sign Up" class="submit">
+      <div class="signup-link">
+        Have an account?  <a href="/user/login">Sign In</a>
+      </div>
+  </form>
+  <% if (success == false) { %>
+    <div class="error">
+      <% if (error.errors.length !== 0) { %>
+        <%if ( error.errors[0].param === "name") {%>
+          <p> Name must be at least <span><u><b>7</b></u></span> characters </p>
+       <% }else if(error.errors[0].param === "password") {%>
+        <p> Password must be at least <span ><u><b>8</b></u></span> characters </p>
+      <%}else if(error.errors[0].param === "confirm-password") {%>
+        <p>Password must be matched </p>
+      <%}else if(error.errors[0].param === "email") {%>
+        <p>email alredy exists</p>
+      <% } %> 
+        <% } %>
+    </div>
+  <% } %>
+</div>
